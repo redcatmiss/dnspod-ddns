@@ -1,3 +1,4 @@
+# coding=utf-8
 import asyncio
 import os
 import json
@@ -12,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 
 def read_config_to_env():
-    config_path = '/etc/dnspod/ddnsrc'
+    config_path = '/Users/mc/Running/ddns/dnspod-ddns/ddnsrc.conf'
     if os.path.isfile(config_path):
         try:
             f = open(config_path)
